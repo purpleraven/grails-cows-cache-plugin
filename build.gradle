@@ -12,7 +12,7 @@ buildscript {
     }
 }
 
-version "1.0"
+version "1.1"
 
 group "cows.plugins"
 
@@ -100,18 +100,15 @@ publishing {
 
 
 grailsPublish {
-    // TODO: Provide values here
-//    user = ''
-//    key = 'key'
-    websiteUrl = "33cows.com"
-    vcsUrl = "altair.33cows.com/svn"
-    issueTrackerUrl = "altair.33cows.com"
+    user = ''
+    key = ''
+    githubSlug = 'purpleraven/grails-cows-cache-plugin'
     license {
         name = 'Apache-2.0'
     }
-    title = "My Plugin"
-    desc = "Full plugin description"
-    developers = [johndoe:"John Doe"]
+    title = "Cows cache plugin"
+    desc = "The plugin provides possibility to use Spring Cache together with Hibernate L2 cache and EHCache "
+    developers = [johndoe: "John Doe"]
     portalUser = ""
     portalPassword = ""
 }

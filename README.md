@@ -1,6 +1,6 @@
 # grails-cows-cache-plugin
 
-The plugin provides possibility to use Spring Cache together with Hibernate second level cache and EHCache 
+The plugin provides possibility to use Spring Cache together with Hibernate L2 cache and EHCache 
 
 Interesting things:
 * Provided SimpleCacheKeyGenerator can be used as Spring customCacheKeyGenerator. Just add `customCacheKeyGenerator(SimpleCacheKeyGenerator)` in resource.groovy
@@ -15,3 +15,4 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 ]
 ```
       
+Grails 3.3 supported      
