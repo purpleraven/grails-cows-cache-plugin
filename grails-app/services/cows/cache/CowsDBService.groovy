@@ -13,8 +13,6 @@ class CowsDBService {
 
   def sessionFactory
 
-  def grailsApplication
-
   def int sqlUpdate(query, params = []){
     int result = 0
     doWork ({connection -> result = new Sql(connection).executeUpdate(query, params) } )
