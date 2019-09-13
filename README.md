@@ -15,15 +15,30 @@ Interesting things:
       
 Installation
 ------------
+
+Add the following dependencies in `build.gradle`
+```
+repositories {
+...
+  maven { url "http://dl.bintray.com/purpleraven/plugins" }
+...
+}
+dependencies {
+...
+    compile 'org.grails.plugins:cows-cache:2.0'
+...
+}
+```
+
       
-Add following limitation in runtime.groovy 
+Add following spring security configuration runtime.groovy to protect UI from access 
 ```
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
     [pattern: '/adminCache/**', access:["hasAuthority('YOUR_ADMIN_PERMISSION')"]]
 ]
 ```
 
-Add `customCacheKeyGenerator(SimpleCacheKeyGenerator)` in resource.groovy
+Add `customCacheKeyGenerator(SimpleCacheKeyGenerator)` in resource.groovy (optional)
       
 License
 -------
