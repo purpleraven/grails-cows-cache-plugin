@@ -9,7 +9,7 @@ Usage
 -----
 Interesting things:
 * Provided SimpleCacheKeyGenerator can be used as Spring customCacheKeyGenerator
-* CowsDBService has method for direct sql quering inside current Hibernate transaction: sqlUpdate, sqlExecute, sqlFirstRow, sqlEachRow, sqlRows
+* CowsDBService has method for direct sql quering inside current Hibernate transaction: *sqlUpdate, sqlExecute, sqlFirstRow, sqlEachRow, sqlRows*
 * The plugin includes EHCache administrative UI with cache size manipulation possibilities and listing cache content (/adminCache/index)
 
 ![configuration](https://github.com/purpleraven/grails-cows-cache-plugin/raw/master/pics/list.png)
