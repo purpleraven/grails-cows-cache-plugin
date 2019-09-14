@@ -39,6 +39,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 ```
 
 Add `customCacheKeyGenerator(SimpleCacheKeyGenerator)` in resource.groovy (optional)
+
+ehcache.xml can be placed in grails-app/conf directory
       
 License
 -------
