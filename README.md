@@ -28,7 +28,7 @@ repositories {
 }
 dependencies {
 ...
-    compile 'org.grails.plugins:grails-cows-cache-plugin:2.0'
+    compile 'org.grails.plugins:grails-cows-cache-plugin:2.1'
 ...
 }
 ```

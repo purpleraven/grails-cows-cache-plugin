@@ -41,7 +41,7 @@ class CowsDBService {
     result
   }
 
-  private doWork(c){
+  def doWork(Closure c){
     sessionFactory.currentSession.doWork (c as Work)
   }
 }
