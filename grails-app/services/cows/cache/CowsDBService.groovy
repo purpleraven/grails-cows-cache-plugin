@@ -35,7 +35,7 @@ class CowsDBService {
     doWork ({connection -> new Sql(connection).eachRow(query, params, cl) })
   }
 
-  def List<GroovyRowResult> sqlRows(String query, params = [], int offset = 0, int maxRows = 0){
+  def List<GroovyRowResult> sqlRows(String query, params = [], int offset = 0, int maxRows = Short.MAX_VALUE){
     def result = null
     doWork ({connection -> result = new Sql(connection).rows(query, params, offset+1 , maxRows) }) // offset starts from 1
     result
