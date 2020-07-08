@@ -19,6 +19,12 @@ class CowsDBService {
     result
   }
 
+  def List sqlInsert(query, params = []){
+    List result = null
+    doWork ({connection -> result = new Sql(connection).executeInsert(query, params) } )
+    result
+  }
+
   def boolean sqlExecute(query, params=[]){
     def result = false
     doWork({connection -> result = new Sql(connection).execute(query, params)})
