@@ -76,8 +76,8 @@ class AdminCacheController {
   }
 
   def calcSize(){
-    def memorySize = findCache(params.id).calculateInMemorySize()/1024
-    render(contentType:'text/plain', text: "${formatNumber( number: memorySize, format: '##.#' )} Kb")
+    def memorySize = findCache(params.id).calculateInMemorySize().intdiv(1024)
+    render(contentType:'text/plain', text: "${memorySize} Kb")
   }
 
   def private CacheManager getCacheManager(){

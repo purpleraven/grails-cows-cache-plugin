@@ -3,7 +3,7 @@
 
 The plugin provides possibility to use Spring Cache together with Hibernate L2 cache and EHCache 
 
-Grails 3.3 supported 
+Grails 4 & 3.3 supported 
 
 Usage
 -----
